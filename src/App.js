@@ -33,7 +33,7 @@ function App() {
       'Authorization': `Bearer ${token}`
     };
 
-    Axios.get('http://127.0.0.1:8080/api/transactions/fetchWallet', { headers })
+    Axios.get('https://tally.netpluspay.com/api/transactions/fetchWallet', { headers })
       .then(response => {
         // setApiData(response.data.data);
         console.log(response);
